@@ -8,8 +8,8 @@ namespace models
         [Key]
         public int ID { get; set; }
         [MaxLength(50)]
+        [Required]
         public string Naziv { get; set; }
-        public int Dodatak { get; set; }
         
     }
 }

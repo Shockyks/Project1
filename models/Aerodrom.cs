@@ -8,9 +8,12 @@ namespace models
         [Key]
         public int ID { get; set; }
         [MaxLength(50)]
+        [Required]
         public string Naziv { get; set; }
         [MaxLength(50)]
+        [Required]
         public string Grad { get; set; }
-        public List<Let> Letovi { get; set; }
+        [MaxLength(50)]
+        public string Drzava { get; set; }
     }
 }

@@ -1,0 +1,111 @@
+body {
+    background: #47545c;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color:whitesmoke;
+}
+.GlavniKontejner
+{
+    display: flex;
+    justify-content: space-around;
+}
+.Forma
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.prvakonta
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex:1, 1, auto;
+    margin-bottom: 10px;
+
+}
+
+button /* ukrasavanje*/
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:deepskyblue;
+    color: whitesmoke;
+    border:2px solid rgb(8, 5, 20);
+    border-radius:4px;
+}
+
+
+input[type=text] , textarea
+{
+    font-family: inherit;
+    background-color: transparent;
+    color: deepskyblue;
+    border:2px solid rgb(8, 5, 20);
+    border-radius:4px;
+    outline:none;
+    transition: 0.4s;
+
+}
+input[type=text]:hover
+{
+    border-color:rgb(8, 5, 20) ;
+    box-shadow: 0 0 8px 0 rgb(8, 5, 20);
+
+}
+
+select
+{
+    font-family: inherit;
+    background-color: transparent;
+    color: deepskyblue;
+    border:2px solid rgb(8, 5, 20);
+    border-radius:4px;
+    outline:none;
+    transition: 0.4s;
+    
+}
+select:hover
+{   
+    border-color:rgb(8, 5, 20) ;
+    box-shadow: 0 0 8px 0 rgb(8, 5, 20);
+
+}
+option
+{
+    font-family: inherit;
+    background:rgb(26, 29, 41);
+}
+
+
+.dugme3
+{
+    margin-top: 10px;
+}
+
+.label1
+{
+    margin-right: 10px;
+    margin-top:2px;
+}
+.klasa1
+{ margin-right: 10px;
+}
+.btnn
+{ margin-right: 10px;
+
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: rgb(19, 56, 80);
+}
+.Dodaj
+{
+    display: flex;
+    flex-direction: column;
+    
+}

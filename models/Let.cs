@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace models
 {
@@ -7,15 +8,15 @@ namespace models
     {
         [Key]
         public int ID { get; set; }
-        public Aerodrom Aerodrom1 { get; set; }
-        public Aerodrom Aerodrom2 { get; set; }
-        public int Cena { get; set; }
+        [JsonIgnore]
+        public Aerodrom Aerodrom { get; set; }
+        [Range(0, 200)]
         public int BrojMesta { get; set; }
-        public int BrojPutnika { get; set; }
+        [JsonIgnore]
         public Klasa Klasa { get; set; }
-        public DateTime DatumLeta { get; set; }
-        public TimeSpan VremePolaska { get; set; }
-        public TimeSpan VremeDolaska { get; set; }
+        public string DatumLeta { get; set; }
+        public string VremePolaska { get; set; }
+        public string VremeDolaska { get; set; }
 
     }
 }

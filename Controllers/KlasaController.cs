@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -9,24 +9,23 @@ namespace Projekat1.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AerodromController : ControllerBase
+    public class KlasaController : ControllerBase
     {
         public ContextKlasa Context { get; set; }
 
-        public AerodromController(ContextKlasa context)
+        public KlasaController(ContextKlasa context)
         {
             Context = context;
         }
-
-        [Route("PronadjiAerodrome")]
+    [Route("PronadjiKlase")]
         [HttpGet]
-        public async Task<ActionResult> PronadjiAerodrome()
+        public async Task<ActionResult> PronadjiKlase()
         {
             try
             {
-                var aerodrom = await Context.Aerodromi.ToListAsync();
+                var klasa = await Context.Klase.ToListAsync();
 
-                return Ok(aerodrom);
+                return Ok(klasa);
             }
             catch(Exception e)
             {
